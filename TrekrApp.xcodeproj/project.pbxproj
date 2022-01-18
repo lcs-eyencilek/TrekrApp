@@ -55,7 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				498C31592797065500E8CF3E /* TrekrAppApp.swift */,
-				498C315A2797065500E8CF3E /* ContentView.swift */,
+				498C3178279706B300E8CF3E /* Model */,
+				498C3177279706AD00E8CF3E /* Views */,
 				498C315B2797065700E8CF3E /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -76,6 +77,21 @@
 				498C31682797065700E8CF3E /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		498C3177279706AD00E8CF3E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				498C315A2797065500E8CF3E /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		498C3178279706B300E8CF3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

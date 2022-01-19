@@ -11,7 +11,9 @@ import SwiftUI
 struct TrekrAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                LocationDetail(location: .example)
+            }
         }
     }
 }

@@ -15,6 +15,8 @@
 		49810E712799C6AB00444813 /* WorldMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49810E6F2799C6AB00444813 /* WorldMap.swift */; };
 		49810E732799C74C00444813 /* TipsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49810E722799C74C00444813 /* TipsList.swift */; };
 		49810E742799C74C00444813 /* TipsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49810E722799C74C00444813 /* TipsList.swift */; };
+		49810E762799DE0F00444813 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49810E752799DE0E00444813 /* Tip.swift */; };
+		49810E772799DE0F00444813 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49810E752799DE0E00444813 /* Tip.swift */; };
 		498C31692797065700E8CF3E /* TrekrAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C31592797065500E8CF3E /* TrekrAppApp.swift */; };
 		498C316A2797065700E8CF3E /* TrekrAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498C31592797065500E8CF3E /* TrekrAppApp.swift */; };
 		498C316D2797065700E8CF3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 498C315B2797065700E8CF3E /* Assets.xcassets */; };
@@ -34,6 +36,7 @@
 		49810E6C279866D100444813 /* LocationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationList.swift; sourceTree = "<group>"; };
 		49810E6F2799C6AB00444813 /* WorldMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldMap.swift; sourceTree = "<group>"; };
 		49810E722799C74C00444813 /* TipsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsList.swift; sourceTree = "<group>"; };
+		49810E752799DE0E00444813 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 		498C31592797065500E8CF3E /* TrekrAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrekrAppApp.swift; sourceTree = "<group>"; };
 		498C315B2797065700E8CF3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		498C31602797065700E8CF3E /* TrekrApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrekrApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +121,7 @@
 				498C31792797099C00E8CF3E /* tips.json */,
 				498C317F27970C5200E8CF3E /* Location.swift */,
 				49810E69279863BC00444813 /* LocationStore.swift */,
+				49810E752799DE0E00444813 /* Tip.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -225,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49810E6A279863BC00444813 /* LocationStore.swift in Sources */,
+				49810E762799DE0F00444813 /* Tip.swift in Sources */,
 				49810E702799C6AB00444813 /* WorldMap.swift in Sources */,
 				498C318027970C5200E8CF3E /* Location.swift in Sources */,
 				49810E732799C74C00444813 /* TipsList.swift in Sources */,
@@ -239,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49810E6B279863BC00444813 /* LocationStore.swift in Sources */,
+				49810E772799DE0F00444813 /* Tip.swift in Sources */,
 				49810E712799C6AB00444813 /* WorldMap.swift in Sources */,
 				498C318127970C5200E8CF3E /* Location.swift in Sources */,
 				49810E742799C74C00444813 /* TipsList.swift in Sources */,

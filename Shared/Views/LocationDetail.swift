@@ -38,10 +38,12 @@ struct LocationDetail: View {
                     .padding(.vertical)
             }
             
-            Text(location.more)
-                .padding([.horizontal,.bottom])
-            
             if !location.advisory.isEmpty {
+                
+                // Show only the location's "more" text with bottom padding included
+                Text(location.more)
+                    .padding([.horizontal,.bottom])
+                
                 HStack {
                     Text("Advisory")
                         .font(.title3)
@@ -53,6 +55,10 @@ struct LocationDetail: View {
                 
                 Text(location.advisory)
                     .padding([.horizontal, .bottom])
+            } else {
+                // Show only the location's "more" text with bottom padding included
+                Text(location.more)
+                    .padding([.horizontal, .bottom])
             }
         }
         .navigationTitle(location.name)
@@ -61,6 +67,6 @@ struct LocationDetail: View {
 
 struct LocationDetail_Previews: PreviewProvider {
     static var previews: some View {
-        LocationDetail(location: .example)
+        LocationDetail(location: testStore.places[2])
     }
 }

@@ -14,9 +14,31 @@ struct TrekrAppApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                LocationList(store: store)
+            
+            TabView {
+                
+                NavigationView {
+                    LocationList(store: store)
+                }.tabItem {
+                    Image(systemName: "list.bullet")
+                    Text("Location")
+                }
+                
+                NavigationView {
+                    WorldMap()
+                }.tabItem {
+                    Image(systemName: "map")
+                    Text("Map")
+                }
+                
+                NavigationView {
+                    TipsList()
+                }.tabItem {
+                    Image(systemName: "person.fill.questionmark")
+                    Text("Tips")
+                }
             }
+            
         }
     }
 }

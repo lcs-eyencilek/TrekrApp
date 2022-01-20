@@ -25,7 +25,7 @@ struct TrekrAppApp: App {
                 }
                 
                 NavigationView {
-                    WorldMap()
+                    WorldMap(store: store)
                 }.tabItem {
                     Image(systemName: "map")
                     Text("Map")

@@ -40,6 +40,20 @@ struct LocationDetail: View {
             
             Text(location.more)
                 .padding([.horizontal,.bottom])
+            
+            if !location.advisory.isEmpty {
+                HStack {
+                    Text("Advisory")
+                        .font(.title3)
+                        .bold()
+                        .padding(.vertical)
+                    
+                    Spacer()
+                }
+                
+                Text(location.advisory)
+                    .padding([.horizontal, .bottom])
+            }
         }
         .navigationTitle(location.name)
     }

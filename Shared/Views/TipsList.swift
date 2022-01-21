@@ -10,10 +10,10 @@ import SwiftUI
 struct TipsList: View {
     
     // This view creates has it's own source of truth
-    let tips: [Tip]
+    @StateObject var tipHandler = TipHandler()
     
     var body: some View {
-        List(tips, id: \.text, children: \.children) { tip in
+        List(tipHandler.tips, id: \.text, children: \.children) { tip in
             
             // If there are children on this particular tip...
             if tip.children != nil {
@@ -23,20 +23,7 @@ struct TipsList: View {
             }
             
         }
-    }
-    
-    // Initializer pulls tips data from JSON
-    // Populates the array
-    init() {
-        
-        // Get a pointernto the file
-        let url = Bundle.main.url(forResource: "tips", withExtension: "json")!
-        
-        // Load the contents of the JSON file
-        let data = try! Data(contentsOf: url)
-        
-        // Convert the data from the JSON file into the array
-        tips = try! JSONDecoder().decode([Tip].self, from: data)
+        .navigationTitle("Tips")
     }
 }
 
